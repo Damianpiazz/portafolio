@@ -9,7 +9,7 @@ export const translations = {
       contact: "Contacto",
     },
     hero: {
-      greeting: "Hola, soy",
+      greeting: "👋 Hola, soy",
       role: "Desarrollador Full Stack & Ingeniero en Sistemas",
       description:
         "Especializado en crear soluciones tecnológicas innovadoras y escalables. Apasionado por el desarrollo de software y la resolución de problemas complejos.",
@@ -80,7 +80,7 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      greeting: "Hi, I'm",
+      greeting: "👋 Hi, I'm",
       role: "Full Stack Developer & Systems Engineer",
       description:
         "Specialized in creating innovative and scalable technology solutions. Passionate about software development and solving complex problems.",

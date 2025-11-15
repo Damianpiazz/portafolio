@@ -1,26 +1,24 @@
 export const portfolioData = {
   personal: {
-    name: "Juan Pérez",
+    name: "Damián Piazza",
     role: {
-      es: "Desarrollador Full Stack & Ingeniero en Sistemas",
-      en: "Full Stack Developer & Systems Engineer",
+      es: "Estudiante de Ingeniería en Sistemas. Desarrollador / Analista Funcional",
+      en: "Systems Engineering Student. Developer / Functional Analyst",
     },
     bio: {
-      es: "Especializado en crear soluciones tecnológicas innovadoras y escalables. Apasionado por el desarrollo de software y la resolución de problemas complejos.",
-      en: "Specialized in creating innovative and scalable technology solutions. Passionate about software development and solving complex problems.",
+      es: "Quiero enfocarme en el desarrollo de software y el análisis de sistemas, aplicando buenas prácticas, patrones de diseño y comprensión del dominio. Mi formación integral en Ingeniería en Sistemas me permite adaptarme rápidamente a distintos proyectos y tecnologías mientras continúo ampliando mis conocimientos.",
+      en: "I want to focus on software development and systems analysis, applying best practices, design patterns, and domain understanding. My comprehensive training in Systems Engineering allows me to quickly adapt to different projects and technologies while continuing to expand my knowledge.",
     },
-    email: "juan.perez@example.com",
-    phone: "+54 11 1234-5678",
-    location: "Buenos Aires, Argentina",
+    email: "damipiazza11@gmail.com",
+    phone: "",
+    location: "La Plata ✦ CABA, Buenos Aires, Argentina",
     social: {
-      github: "https://github.com/juanperez",
-      linkedin: "https://linkedin.com/in/juanperez",
-      twitter: "https://twitter.com/juanperez",
-      portfolio: "https://juanperez.dev",
+      github: "https://github.com/Damianpiazz?tab=repositories",
+      linkedin: "https://www.linkedin.com/in/damian-piazza-854a6723a/",
     },
     cv: {
-      es: "/cv-juan-perez-es.pdf",
-      en: "/cv-juan-perez-en.pdf",
+      es: "/cv-damian-piazza-es.pdf",
+      en: "/cv-damian-piazza-en.pdf",
     },
   },
   experience: [
