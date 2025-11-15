@@ -24,48 +24,35 @@ export const portfolioData = {
   experience: [
     {
       id: "1",
-      company: "Tech Solutions SA",
-      position: {
-        es: "Desarrollador Full Stack Senior",
-        en: "Senior Full Stack Developer",
-      },
-      startDate: "2022-03",
-      endDate: null,
-      description: {
-        es: "Liderazgo técnico en el desarrollo de aplicaciones web empresariales. Implementación de arquitecturas escalables y mejores prácticas de desarrollo.",
-        en: "Technical leadership in enterprise web application development. Implementation of scalable architectures and development best practices.",
-      },
-      technologies: ["React", "Node.js", "TypeScript", "PostgreSQL", "AWS"],
-    },
-    {
-      id: "2",
-      company: "Digital Innovations",
+      company: "LINA — Laboratorio de Innovación Abierta, UTN",
       position: {
         es: "Analista Funcional & Desarrollador",
         en: "Functional Analyst & Developer",
       },
+      startDate: "2025-06",
+      endDate: null,
+      description: {
+        es: "Análisis de requerimientos y para una aplicación de mensajería peer-to-peer con cifrado de extremo a extremo. Desarrollo de scripts en Python para evaluar y seleccionar el algoritmo de compresión óptimo, orientado a futuras etapas del proyecto.",
+        en: "Requirements analysis for a peer-to-peer messaging application with end-to-end encryption. Development of Python scripts to evaluate and identify the optimal compression algorithm, supporting future stages of the project.",
+      },
+      technologies: ["Python", "UML", "Use Cases", "Design Patterns", "Database Modeling"],
+      icon: "/icons/LINA.jpeg",
+    },
+    {
+      id: "2",
+      company: "LINA — Laboratorio de Innovación Abierta, UTN",
+      position: {
+        es: "Desarrollador Mobile",
+        en: "Mobile Developer",
+      },
       startDate: "2020-01",
       endDate: "2022-02",
       description: {
-        es: "Análisis de requerimientos y desarrollo de soluciones personalizadas. Coordinación entre equipos técnicos y stakeholders.",
-        en: "Requirements analysis and custom solution development. Coordination between technical teams and stakeholders.",
+        es: "Desarrollé componentes mobile con React Native e integré el backend. Trabajé en equipo dentro de un entorno ágil, utilizando Jira como herramienta y Figma para el diseño.",
+        en: "I developed mobile components using React Native and integrated the backend. I collaborated with the team in an agile environment, using Jira as a tool and Figma for design.",
       },
-      technologies: ["Python", "Django", "React", "MySQL", "Docker"],
-    },
-    {
-      id: "3",
-      company: "StartupXYZ",
-      position: {
-        es: "Desarrollador de Software",
-        en: "Software Developer",
-      },
-      startDate: "2018-06",
-      endDate: "2019-12",
-      description: {
-        es: "Desarrollo de features y mantenimiento de aplicaciones web. Participación en todo el ciclo de vida del desarrollo de software.",
-        en: "Feature development and web application maintenance. Participation in the entire software development lifecycle.",
-      },
-      technologies: ["JavaScript", "Vue.js", "PHP", "Laravel", "MongoDB"],
+      technologies: ["React Native", "Expo", "Axios", "MySQL", "Docker", "Figma", "Jira"],
+      icon: "/icons/LINA.jpeg",
     },
   ],
   projects: [
