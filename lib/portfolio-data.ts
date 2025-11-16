@@ -58,167 +58,42 @@ export const portfolioData = {
   projects: [
     {
       id: "1",
-      title: "E-Commerce Platform",
+      title: "FinoFino",
       description: {
-        es: "Plataforma de comercio electrónico completa con gestión de inventario, procesamiento de pagos y panel de administración.",
-        en: "Complete e-commerce platform with inventory management, payment processing, and admin dashboard.",
+        es: "Proyecto práctico para la materia Comunicación de Datos de la UTN. FinoFino es una aplicación móvil desarrollada con Expo y React Native que permite a los músicos afinar guitarra, bajo, ukelele y violín en tiempo real utilizando el micrófono del dispositivo.",
+        en: "Practical project for the Data Communication course at UTN. FinoFino is a mobile application developed with Expo and React Native that allows musicians to tune guitar, bass, ukulele, and violin in real time using the device's microphone.",
       },
-      longDescription: {
-        es: "Desarrollé una plataforma de e-commerce desde cero que maneja más de 10,000 productos y procesa cientos de transacciones diarias. La plataforma incluye un sistema de gestión de inventario en tiempo real, integración con múltiples pasarelas de pago, y un panel de administración completo para gestionar productos, órdenes y clientes.",
-        en: "I developed an e-commerce platform from scratch that handles over 10,000 products and processes hundreds of daily transactions. The platform includes a real-time inventory management system, integration with multiple payment gateways, and a complete admin dashboard to manage products, orders, and customers.",
-      },
-      image: "/modern-ecommerce-dashboard.png",
-      technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Stripe", "Tailwind CSS"],
-      github: "https://github.com/juanperez/ecommerce-platform",
-      demo: "https://ecommerce-demo.vercel.app",
-      video: "https://youtube.com/watch?v=example",
-      features: {
-        es: [
-          "Gestión de inventario en tiempo real",
-          "Integración con Stripe y MercadoPago",
-          "Panel de administración completo",
-          "Sistema de búsqueda avanzada",
-          "Carrito de compras persistente",
-          "Notificaciones por email",
-        ],
-        en: [
-          "Real-time inventory management",
-          "Integration with Stripe and MercadoPago",
-          "Complete admin dashboard",
-          "Advanced search system",
-          "Persistent shopping cart",
-          "Email notifications",
-        ],
-      },
-      codeExample: `// Product search with filters
-export async function searchProducts(filters: SearchFilters) {
-  const products = await prisma.product.findMany({
-    where: {
-      name: { contains: filters.query, mode: 'insensitive' },
-      category: filters.category ? { id: filters.category } : undefined,
-      price: {
-        gte: filters.minPrice,
-        lte: filters.maxPrice,
-      },
-      stock: { gt: 0 },
-    },
-    include: {
-      category: true,
-      images: true,
-    },
-    orderBy: { [filters.sortBy]: filters.sortOrder },
-  })
-  
-  return products
-}`,
+      image: "/FinoFino.jpeg",
+      technologies: ["Expo", "React Native", "React Native Pitch Detector", "TypeScript", "Tailwind CSS"],
+      github: "https://github.com/Damianpiazz/FinoFino",
+      demo: "",
+      video: "",
     },
     {
       id: "2",
-      title: "Task Management System",
+      title: "Novarub Landing Page",
       description: {
-        es: "Sistema de gestión de tareas y proyectos con colaboración en tiempo real y seguimiento de progreso.",
-        en: "Task and project management system with real-time collaboration and progress tracking.",
+        es: "Desarrollo una demo de una landing page corporativa para Novarub, una empresa local de Las Flores, utilizando Astro. La landing page tiene como objetivo principal presentar la empresa, sus servicios, contacto y generar conversiones mediante formularios o botones de acción (call-to-action).",
+        en: "Development of a corporate landing page for Novarub, a local company in Las Flores, using Astro. The landing page's main objective is to showcase the company, its services, provide contact options, and generate conversions through forms or call-to-action buttons.",
       },
-      longDescription: {
-        es: "Sistema completo de gestión de proyectos que permite a los equipos colaborar en tiempo real. Incluye tableros Kanban, gráficos de Gantt, asignación de tareas, seguimiento de tiempo, y reportes detallados de productividad.",
-        en: "Complete project management system that allows teams to collaborate in real-time. Includes Kanban boards, Gantt charts, task assignment, time tracking, and detailed productivity reports.",
-      },
-      image: "/project-management-kanban-board.png",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Redis", "Material-UI"],
-      github: "https://github.com/juanperez/task-manager",
-      demo: "https://taskmanager-demo.vercel.app",
-      features: {
-        es: [
-          "Tableros Kanban personalizables",
-          "Colaboración en tiempo real",
-          "Seguimiento de tiempo",
-          "Notificaciones push",
-          "Reportes y analytics",
-          "Integración con Slack",
-        ],
-        en: [
-          "Customizable Kanban boards",
-          "Real-time collaboration",
-          "Time tracking",
-          "Push notifications",
-          "Reports and analytics",
-          "Slack integration",
-        ],
-      },
-      codeExample: `// Real-time task updates with Socket.io
-socket.on('task:update', (taskData) => {
-  setTasks(prevTasks => 
-    prevTasks.map(task => 
-      task.id === taskData.id ? { ...task, ...taskData } : task
-    )
-  )
-  
-  toast.success('Task updated by team member')
-})
-
-// Drag and drop task between columns
-const handleDragEnd = async (result) => {
-  const { destination, source, draggableId } = result
-  
-  if (!destination) return
-  
-  await updateTaskStatus(draggableId, destination.droppableId)
-  socket.emit('task:moved', { taskId: draggableId, newStatus: destination.droppableId })
-}`,
+      image: "/Novarub-Landing-Page.png",
+      technologies: ["Astro", "React", "Shadcn UI", "GitHub Actions", "Tailwind CSS"],
+      github: "https://github.com/Damianpiazz/novarub-landing",
+      demo: "https://damianpiazz.github.io/novarub-landing/",
+      video: "",
     },
     {
       id: "3",
-      title: "Analytics Dashboard",
+      title: "Cripto UTN – Etapas 1 y 2",
       description: {
-        es: "Dashboard de analytics con visualización de datos en tiempo real y reportes personalizables.",
-        en: "Analytics dashboard with real-time data visualization and customizable reports.",
+        es: "Desarrollé scripts en Python para realizar análisis estadístico de caracteres y evaluar algoritmos de compresión (Huffman, Shannon-Fano, Lempel-Ziv), estudiando la eficiencia y el comportamiento de los datos como base para futuras etapas de compresión y criptografía.",
+        en: "Developed Python scripts to perform character statistical analysis and evaluate compression algorithms (Huffman, Shannon-Fano, Lempel-Ziv), assessing data efficiency and behavior as a foundation for future compression and cryptography stages.",
       },
-      longDescription: {
-        es: "Dashboard interactivo de analytics que procesa y visualiza grandes volúmenes de datos en tiempo real. Incluye gráficos personalizables, filtros avanzados, exportación de reportes, y alertas automáticas basadas en métricas.",
-        en: "Interactive analytics dashboard that processes and visualizes large volumes of data in real-time. Includes customizable charts, advanced filters, report export, and automatic alerts based on metrics.",
-      },
-      image: "/analytics-dashboard-charts-graphs.jpg",
-      technologies: ["Vue.js", "Python", "FastAPI", "PostgreSQL", "Chart.js", "Docker"],
-      github: "https://github.com/juanperez/analytics-dashboard",
-      video: "https://youtube.com/watch?v=example2",
-      features: {
-        es: [
-          "Visualización de datos en tiempo real",
-          "Gráficos interactivos personalizables",
-          "Exportación a PDF y Excel",
-          "Alertas automáticas",
-          "Filtros avanzados",
-          "API REST completa",
-        ],
-        en: [
-          "Real-time data visualization",
-          "Customizable interactive charts",
-          "Export to PDF and Excel",
-          "Automatic alerts",
-          "Advanced filters",
-          "Complete REST API",
-        ],
-      },
-      codeExample: `# FastAPI endpoint for real-time metrics
-@app.get("/api/metrics/realtime")
-async def get_realtime_metrics(
-    metric_type: str,
-    time_range: int = 3600,
-    db: Session = Depends(get_db)
-):
-    end_time = datetime.now()
-    start_time = end_time - timedelta(seconds=time_range)
-    
-    metrics = db.query(Metric).filter(
-        Metric.type == metric_type,
-        Metric.timestamp.between(start_time, end_time)
-    ).all()
-    
-    return {
-        "data": [m.value for m in metrics],
-        "labels": [m.timestamp.isoformat() for m in metrics],
-        "summary": calculate_summary(metrics)
-    }`,
+      image: "/Cripto-UTN.png",
+      technologies: ["Python"],
+      github: "https://github.com/Damianpiazz/Cripto-UTN",
+      demo: "",
+      video: "",
     },
   ],
   education: [
