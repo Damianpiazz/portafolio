@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Navigation } from "@/components/navigation/Navigation";
 import { HeroSection } from "@/components/hero/HeroSection";
 import { ExperienceSection } from "@/components/experience/ExperienceSection";
+import { ProjectsSection } from "@/components/projects/ProjectsSection"; 
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <main className="flex flex-col">
         <HeroSection />
         <ExperienceSection />
+        <ProjectsSection />
       </main>
     </div>
   );
