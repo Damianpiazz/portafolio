@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const portfolioData = {
   personal: {
     name: "Damián Piazza",
@@ -99,43 +101,60 @@ export const portfolioData = {
   education: [
     {
       id: "1",
-      institution: "Universidad Tecnológica Nacional",
+      badge: "En Curso",
+      institution: "Universidad Tecnológica Nacional - Facultad Regional La Plata",
       degree: {
         es: "Ingeniería en Sistemas de Información",
         en: "Systems Engineering Degree",
       },
-      startDate: "2014",
-      endDate: "2019",
+      startDate: "2023",
+      endDate: "2028 (estimado)",
       description: {
-        es: "Especialización en desarrollo de software, arquitectura de sistemas y gestión de proyectos tecnológicos.",
-        en: "Specialization in software development, systems architecture, and technology project management.",
+        es: "Formación integral en análisis y diseño de sistemas, desarrollo de software, bases de datos, redes y comunicaciones, seguridad informática, inteligencia artificial y gestión de proyectos tecnológicos.",
+        en: "Comprehensive training in systems analysis and design, software development, databases, networks and communications, cybersecurity, artificial intelligence, and technology project management.",
       },
     },
+    {
+      id: "2",
+      badge: "Finalizado",
+      institution: "Escuela Técnica Industrial N°1 Gral. Manuel Belgrano",
+      degree: {
+        es: "Técnico Informático",
+        en: "Computer Systems Technician",
+      },
+      startDate: "2015",
+      endDate: "2022",
+      description: {
+        es: "Formación práctica en mantenimiento de hardware y software, redes y comunicaciones, soporte técnico, programación básica y administración de sistemas informáticos.",
+        en: "Practical training in hardware and software maintenance, networks and communications, technical support, basic programming, and IT systems administration.",
+      },
+    }
+
   ],
   certifications: [
     {
       id: "1",
-      name: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2023",
-      image: "/aws-certification-badge.jpg",
-      credentialUrl: "https://aws.amazon.com/verification",
+      name: "Backend / Java",
+      issuer: "Ciudad Autónoma de Buenos Aires",
+      date: "2025",
+      image: "/JAVA_-_Certificacin.jpg",
+      credentialUrl: "",
     },
     {
       id: "2",
-      name: "Professional Scrum Master I",
-      issuer: "Scrum.org",
-      date: "2022",
-      image: "/scrum-master-certification.png",
-      credentialUrl: "https://scrum.org/verification",
+      name: "Introducción a la Ciencia de Datos",
+      issuer: "Santander Open Academy",
+      date: "2025",
+      image: "/introduccion-ciencia-datos.jpg",
+      credentialUrl: "",
     },
     {
       id: "3",
-      name: "MongoDB Certified Developer",
-      issuer: "MongoDB University",
-      date: "2021",
-      image: "/mongodb-certification.png",
-      credentialUrl: "https://university.mongodb.com/verification",
+      name: "Versionado y Automatización de Despliegue (Git a Docker)",
+      issuer: "UTN - Facultad Regional La Plata",
+      date: "2025",
+      image: "/versionado-automatizacion.jpg",
+      credentialUrl: "",
     },
   ],
   skills: {
