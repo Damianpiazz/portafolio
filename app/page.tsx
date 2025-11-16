@@ -2,7 +2,8 @@ import Image from "next/image";
 import { Navigation } from "@/components/navigation/Navigation";
 import { HeroSection } from "@/components/hero/HeroSection";
 import { ExperienceSection } from "@/components/experience/ExperienceSection";
-import { ProjectsSection } from "@/components/projects/ProjectsSection"; 
+import { ProjectsSection } from "@/components/projects/ProjectsSection";
+import { EducationSection } from "@/components/education/EducationSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <HeroSection />
         <ExperienceSection />
         <ProjectsSection />
+        <EducationSection />
       </main>
     </div>
   );
