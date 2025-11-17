@@ -195,6 +195,7 @@ export const portfolioData = {
     other: [
       { name: "UML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg" },
       { name: "BPMN", icon: "/bpmn.webp" },
+      { name: "ADOO", icon: "/design.png" },
       { name: "GoF", icon: "/design.png" },
       { name: "GRASP", icon: "/design.png" },
       { name: "SOLID", icon: "/design.png" },
