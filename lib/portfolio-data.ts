@@ -13,7 +13,7 @@ export const portfolioData = {
     },
     email: "damipiazza11@gmail.com",
     phone: "",
-    location: "La Plata ✦ CABA, Buenos Aires, Argentina",
+    location: "CABA - La Plata, Argentina",
     social: {
       github: "https://github.com/Damianpiazz?tab=repositories",
       linkedin: "https://www.linkedin.com/in/damian-piazza-854a6723a/",
