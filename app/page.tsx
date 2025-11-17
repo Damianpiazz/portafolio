@@ -19,6 +19,11 @@ export default function Home() {
         <SkillsSection />
         <ContactSection />
       </main>
+      <footer className="py-8 px-4 border-t border-border">
+          <div className="container mx-auto text-center text-sm text-muted-foreground">
+            <p>© {new Date().getFullYear()} Damián Piazza</p>
+          </div>
+        </footer>
     </div>
   );
 }
