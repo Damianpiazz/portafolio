@@ -56,7 +56,6 @@ export const translations = {
       frontend: "Frontend",
       backend: "Backend",
       database: "Bases de datos",
-      modelingAndDesign: "Modelado y Diseño",
       tools: "Herramientas",
       other: "Otros",
     },
