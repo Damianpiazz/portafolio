@@ -54,14 +54,14 @@ export function ContactForm() {
         return (
           <>
             <Check className="h-4 w-4 mr-2 text-green-500" />
-            Sent!
+            {t.contact.success}
           </>
         )
       case "error":
         return (
           <>
             <Send className="h-4 w-4 mr-2 text-red-500" />
-            Error
+            {t.contact.error}
           </>
         )
       default:
