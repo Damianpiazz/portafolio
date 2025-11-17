@@ -52,11 +52,13 @@ export const translations = {
     },
     skills: {
       title: "Habilidades Técnicas",
+      languages: "Lenguajes de Programación",
       frontend: "Frontend",
       backend: "Backend",
       database: "Bases de datos",
+      modelingAndDesign: "Modelado y Diseño",
       tools: "Herramientas",
-      other: "Otras",
+      other: "Otros",
     },
     contact: {
       title: "Contacto",
@@ -123,6 +125,7 @@ export const translations = {
     },
     skills: {
       title: "Technical Skills",
+      languages: "Programming Languages",
       frontend: "Frontend",
       backend: "Backend",
       database: "Databases",
